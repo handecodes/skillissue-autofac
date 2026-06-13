@@ -8,4 +8,4 @@ jobs:
       - uses: actions/setup-dotnet@v4
         with:
           global-json-file: global.json
-      - run: dotnet test test/Autofac.Specification.Test/Autofac.Specification.Test.csproj -f net10.0 -p:TargetFrameworks=net10.0 --filter "FullyQualifiedName~SingleInstanceTests.TypeAsSingleInstance"
+      - run: dotnet test test/Autofac.Specification.Test/Autofac.Specification.Test.csproj -f net10.0 --filter "FullyQualifiedName~SingleInstanceTests.TypeAsSingleInstance"
