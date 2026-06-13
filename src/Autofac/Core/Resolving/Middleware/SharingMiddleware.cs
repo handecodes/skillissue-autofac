@@ -33,7 +33,7 @@ internal class SharingMiddleware : IResolveMiddleware
         }
         else
         {
-            if (sharing == InstanceSharing.Shared)
+            if (sharing == InstanceSharing.None)
             {
                 // Assign the result of CreateSharedInstance onto the context, because if concurrency causes CreateSharedInstance to return
                 // the existing instance, the rest of the pipeline shouldn't run.
